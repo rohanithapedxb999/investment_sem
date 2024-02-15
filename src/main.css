@@ -1,0 +1,332 @@
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: var(--kt-input-color);
+}
+
+.dataTables_wrapper .dataTables_length select {
+    color: var(--kt-input-color);
+    background-color: var(--kt-input-bg);
+    padding: 0.5rem 1rem;
+    border: transparent;
+    margin-left: 20px;
+    border:1px solid  var(--kt-input-border-color);
+}
+
+.dataTables_wrapper .dataTables_length select option {
+    color:var(--kt-input-color);
+    background-color: var(--kt-input-bg);
+    border:1px solid var(--kt-input-border-color);
+}
+
+table.dataTable td.dt-control:before{
+    content: "+";
+    background-color: #31b131;
+    display: inline-block;
+    border: 0.16em solid white;
+    border-radius: 1em;
+    color: white;
+    height: 1.1em;
+    width: 1.1em;
+    box-shadow: 0 0 0.2em #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: "Courier New",Courier,monospace;
+    line-height: 1em;
+}
+
+table.dataTable tr.dt-hasChild td.dt-control:before {
+    content: "-";
+    background-color: #d33333;
+}
+
+table.dataTable tbody td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+.toolbar {
+    float: left;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    color: var(--kt-headings-color);
+    margin-top: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: var(--kt-input-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: var(--kt-input-color) !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    background-color: var(--kt-input-bg);
+    border-color: var(--kt-input-border-color);
+    color: var(--kt-input-color);
+    width: 200px !important;
+    padding: 0.775rem 1rem;
+
+}
+
+
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    color: var(--kt-input-focus-color);
+    background-color: var(--kt-input-focus-bg);
+    border-color: var(--kt-input-focus-border-color);
+}
+
+table.dataTable thead>tr>th.sorting,
+table.dataTable thead>tr>th.sorting_asc,
+table.dataTable thead>tr>th.sorting_desc {
+    cursor: pointer;
+    position: relative;
+    padding-right: 0px;
+}
+
+
+table.dataTable tbody th,
+table.dataTable tbody td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+    text-align: left;
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+    border-right: 1px solid var(--bs-gray-300);
+    border-bottom: 1px solid var(--bs-gray-300);
+}
+
+table.dataTable thead tr th:first-child,
+table.dataTable thead tr td:first-child,
+table.dataTable tbody tr th:first-child,
+table.dataTable tbody tr td:first-child {
+    border-left: 1px solid var(--bs-gray-300);
+}
+
+
+
+/* .dataTables_wrapper.no-footer div.dataTables_scrollHead table.dataTable thead tr th:first-child{
+    border-top-left-radius: 0.625rem;
+}
+
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr:last-child > td:first-child{
+    border-bottom-left-radius: 0.625rem;
+}
+
+table.dataTable thead tr th:last-child{
+    border-top-right-radius: 0.625rem;
+}
+
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody > table > tbody > tr:last-child > td:last-child{
+    border-bottom-right-radius: 0.625rem;
+} */
+
+ .table > thead  th {
+     color: var(--kt-table-header-text-color);
+     font-weight: bold;
+ }
+ .table-responsive .table > thead  tr,
+ .table-responsive .table > tbody  tr{
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+
+
+
+
+table.dataTable thead tr th:last-child,
+table.dataTable thead tr td:last-child,
+table.dataTable tbody tr th:last-child,
+table.dataTable tbody tr td:last-child {
+    border-right: 1px solid var(--bs-gray-300);
+}
+
+table.dataTable {
+    /* border-bottom: 1px solid var(--bs-gray-300); */
+    width: 100%;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    text-align: start;
+    vertical-align: middle;
+    font-size: 0.999rem;
+    background-color: var(--kt-table-header-bg-color) !important;
+    color: var(--kt-table-header-text-color) !important;
+    border-top: 1px solid var(--bs-gray-300) !important;
+    border-right: 1px solid var(--bs-gray-300);
+    /* border-bottom: 1px solid var(--bs-gray-300); */
+}
+
+table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
+    border-bottom:none !important;
+}
+
+.table thead th,
+.table thead td {
+    color: var(--kt-table-header-text-color) !important;
+    text-align: start;
+}
+
+.table thead th,
+.table thead td,
+.table tbody th,
+.table tbody td {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+    vertical-align: middle;
+}
+
+
+/* .table tbody tr:last-child {
+    border-bottom: none; } */
+
+/* table.dataTable tfoot tr:last-child th,
+table.dataTable tfoot tr:last-child td,
+table.dataTable tbody tr:last-child th,
+table.dataTable tbody tr:last-child td {
+    border-bottom: 1px solid var(--bs-gray-300);
+} */
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border:none;
+    width: 100%;
+}
+.dataTables_scrollHeadInner, .table{
+    width:100% !important
+       };
+
+.swal2-popup .swal2-title {
+    font-weight: 500;
+    font-size: 1.3rem !important;
+    color: #161616;
+}
+.swal2-text{
+    max-height: 10px;  /* To be adjusted as you like */
+    overflow-y: scroll;
+    width: 100%;
+  }
+
+.form-control:focus {
+    border-color: var(--kt-headings-color);
+}
+
+.form-control {
+    height: 37px;
+}
+
+.form-select {
+    margin: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 0.4rem;
+    color: var(--kt-headings-color);
+    visibility: visible;
+    border-color: var(--kt-input-border-color);
+    background-color: var(--kt-input-bg);
+    color:  var(--kt-headings-color);
+    font-size: 1rem;
+    height: 37px;
+    text-indent: 5px;
+    line-height: 30.5px;
+}
+select option {
+    padding: 10px;
+  }
+.css-1okebmr-indicatorSeparator {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    background-color: hsl(0, 0%, 80%);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 1px;
+    box-sizing: border-box;
+    display: none;
+}
+option{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 1px;
+    box-sizing: border-box;
+}
+
+
+.form-check-input:focus {
+    border-color: var(--kt-headings-color);
+}
+
+.mantine-Tabs-tab[data-active] {
+    /* border-color:  var(--kt-gray-400) !important; */
+    border-top:1px solid var(--kt-gray-400) !important;
+    border-right:1px solid var(--kt-gray-400) !important;
+    border-left:1px solid var(--kt-gray-400) !important;
+   color : var(--kt-primary);
+   /* background-color: rgba(233, 237, 252, 1); */
+}
+.mantine-Tabs-tabsList{
+    border-bottom: 0.0625rem solid var(--kt-gray-400)!important;
+  }
+
+  
+/* input[type="checkbox"]:disabled {
+    background-color: gray;
+}
+input[type="radio"]:disabled {
+    background-color: gray;
+} */
+.input-group-text {
+    color: var(--kt-input-group-addon-color);
+    background-color: var(--kt-input-group-addon-bg);
+    border: 1px solid var(--kt-input-group-addon-border-color);
+    height: 37px;
+}
+
+.form-check-input {
+    height: 20px;
+    width: 20px
+}
+
+ .table.gy-4 td {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* .table tfoot tr:last-child, .table tbody tr:last-child {
+    border-bottom: 1px solid var(--bs-gray-300);
+}
+
+.table tbody tr td:first-child, .table thead tr th:first-child {
+    border-left: 1px solid var(--bs-gray-300);
+} */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(207, 202, 202, 0.966);
+    opacity: 1;
+    display: block;
+    background: url('../public/media/svg/calender.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+.btn-bg-primary-light{
+background-color: #50bbf7;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
